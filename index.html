@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Amazing cite</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <h1 class="navbar__title">Bizzare cite</h1>
+            <div class="navbar__list">
+                <a href="#first-link" class="navbar__list_item">Scroll Snap</a>
+                <a href="#second-link" class="navbar__list_item">Scroll-snap-type</a>
+                <a href="#third-link" class="navbar__list_item">Scroll-snap-align</a>
+            </div>
+        </nav>
+        <div id="first-link" class="wrapper__block">
+            <div class="wrapper__content">
+                <h2 class="wrapper__content_title">Основы Scroll Snap</h2>
+                <p class="wrapper__content_text">
+                    Ключевыми свойствами спецификации Scroll Snap являются <b>scroll-snap-type </b> и <b>scroll-snap-align</b> .
+                    Свойство <b>scroll-snap-type </b>  применяется к скролл-контейнеру для определения типа и направления прокрутки.
+                    Свойство <b>scroll-snap-align</b>  нужно применять к дочерним элементам, чтобы указать позицию, к которой будет привязана прокрутка.
+                    Пример ниже демонстрирует прокрутку с привязкой вдоль оси y, а свойство <b>scroll-snap-align</b> применяется для элемента "section",
+                    чтобы задать точку, на которой прокрутка должна остановиться.
+                </p>
+            </div>
+        </div>
+        <div id="second-link" class="wrapper__block">
+            <div class="wrapper__content align-right">
+                <h2 class="wrapper__content_title">Свойство scroll-snap-type</h2>
+                <p class="wrapper__content_text">
+                    Свойство <b>scroll-snap-type</b> необходимо, чтобы задавать направление, в котором будет происходить привязка прокрутки.
+                    Значением свойства может быть x, y, или соответствующие логические <i>block</i> или <i>inline</i>.
+                    Также можно использовать ключевое слово both, чтобы привязка работала в обоих направлениях.
+                    Также можно передавать ключевые слова mandatory, или <i>proximity</i>.
+                    Ключевое слово <i>mandatory</i> определяет обязательное смещение прокрутки браузера к ближайшей точке привязки.
+                    Ключевое слово <i>proximity</i> означает, что привязка может произойти , но не обязательно.
+                </p>
+            </div>
+        </div>
+        <div id="third-link" class="wrapper__block">
+            <div class="wrapper__content">
+                <h2 class="wrapper__content_title">Свойство scroll-snap-align</h2>
+                <p class="wrapper__content_text">
+                    Свойство scroll-snap-align может принимать значения <i>start</i>, <i>end</i>, или <b>center</b>,
+                    обозначающие, какую сторону контейнера прижимать к дочернему элементу.
+                    В примере ниже вы можете изменить значение <b>scroll-snap-align</b>, чтобы увидеть, как это повлияет на работу прокрутки.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+html{
+    scroll-behavior: smooth !important;
+}
+
+@import 'variables.scss';
+@import 'null-style.scss';
+
+
+h1,h2,h3,p{
+    font-family: $titleFontFamile;
+    color: rgb(228, 205, 205);
+}
+
+i,b{
+    color: rgb(255, 255, 255);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    z-index: 2;
+    width: 97.9%;
+    position: fixed;
+    backdrop-filter: blur(6px);
+
+    &__title{
+        font-size: 30px;
+        color: white;
+    }
+    
+    &__list{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+
+        &_item{
+            font-size: 20px;
+            color: white;
+            margin-right: 30px;
+            text-decoration: none;
+            &:last-child{
+                margin-right: 0px;
+            }
+            &:hover{
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    //scroll-snap-type: y mandatory;
+
+    &__block{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 79px;
+        background-blend-mode: multiply;
+        //scroll-snap-align: start;
+
+        &:nth-child(2){
+            background: #f00 url(img/SvWWN.png);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        &:nth-child(3){
+            background: rgb(174, 0, 255) url(img/pexels-anand-dandekar-1532771.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        &:nth-child(4){
+            background: rgb(255, 123, 0) url(img/pexels-craig-adderley-1563356.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
+    
+    &__content{
+
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        max-width: 700px;
+    
+        &_title{
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+        
+        &_text{
+            font-size: 20px;
+        }
+
+        &.align-right{
+            left: unset;
+            right: 50px;
+        }
+    }
+}
